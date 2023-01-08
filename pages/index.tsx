@@ -32,7 +32,7 @@ export default function Page() {
   return (
     <MotionConfig transition={{ duration: 1.2, ease: [0.32, 0.72, 0, 1] }}>
       <div className="flex h-full min-h-screen flex-col items-center justify-center bg-black">
-        <div className="max-w-4xl">
+        <div className="max-w-5xl">
           <div className="relative mb-4 overflow-hidden">
             <motion.div
               animate={{ x: `-${index * 100}%` }}

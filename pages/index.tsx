@@ -10,19 +10,7 @@ const images = [
   '/images/3.jpeg',
   '/images/4.jpeg',
   '/images/5.jpeg',
-  '/images/6.jpeg',
-  '/images/1.jpeg?1',
-  '/images/2.jpeg?1',
-  '/images/3.jpeg?1',
-  '/images/4.jpeg?1',
-  '/images/5.jpeg?1',
-  '/images/6.jpeg?1',
-  '/images/1.jpeg?2',
-  '/images/2.jpeg?2',
-  '/images/3.jpeg?2',
-  '/images/4.jpeg?2',
-  '/images/5.jpeg?2',
-  '/images/6.jpeg?2'
+  '/images/6.jpeg'
 ]
 
 const collapsedAspectRatio = 1 / 3
@@ -43,12 +31,12 @@ export default function Page() {
 
   return (
     <MotionConfig transition={{ duration: 1.2, ease: [0.32, 0.72, 0, 1] }}>
-      <div className="h-full min-h-screen bg-black">
-        <div className="mx-auto flex h-full max-w-7xl flex-col items-center">
+      <div className="flex min-h-screen flex-col items-center justify-center bg-black">
+        <div className="h-full max-w-4xl">
           <div className="relative overflow-hidden">
             <motion.div
               animate={{ x: `-${index * 100}%` }}
-              className="flex"
+              className="flex h-full"
             >
               {images.map((image, i) => (
                 <motion.img

@@ -78,7 +78,7 @@ export default function Page() {
               )}
             </AnimatePresence>
           </div>
-          <div className="absolute inset-x-0 bottom-6 flex h-24 justify-center overflow-hidden">
+          <div className="absolute inset-x-0 bottom-6 flex h-16 justify-center overflow-hidden">
             <motion.div
               initial={false}
               animate={{ x: `-${index * 100 * (collapsedAspectRatio / fullAspectRatio) + margin + index * gap}%` }}

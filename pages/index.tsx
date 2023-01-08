@@ -2,7 +2,7 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline'
 import { useState } from 'react'
 
-let images = [
+const images = [
   '/images/1.jpeg',
   '/images/2.jpeg',
   '/images/3.jpeg',
@@ -12,11 +12,11 @@ let images = [
 ]
 
 export default function Page() {
-  let [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0)
 
   return (
-    <div className="h-full bg-black">
-      <div className="mx-auto flex h-full max-w-7xl flex-col justify-center">
+    <div className="h-full min-h-screen bg-black">
+      <div className="mx-auto flex h-full max-w-7xl flex-col items-center">
         <div className="relative">
           <img
             src={images[index]}
